@@ -21,3 +21,7 @@
 #user {
   border: 1px solid black;
 }
+
+#friend-list {
+  max-height: 100px;
+}
