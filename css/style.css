@@ -17,3 +17,7 @@
   height: 85%;
   background-color: whitesmoke;
 }
+
+#user {
+  border: 1px solid black;
+}
