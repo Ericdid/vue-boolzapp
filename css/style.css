@@ -15,19 +15,19 @@
 }
 /* app */
 .container {
-  height: 85%;
+  height: 80%;
   background-color: whitesmoke;
 }
 
-#friend-list {
-  max-height: 500px;
-}
 /* seconda riga */
 .left-col {
-  height: 492px;
+  height: 100%;
+}
+.f-list {
+  background-color: whitesmoke;
 }
 .main-app {
-  height: 492px;
+  height: 100%;
 }
 .message-box {
   height: 90%;
