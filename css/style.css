@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* background */
 .wrapper {
   width: 100%;
   height: 100vh;
@@ -13,15 +13,28 @@
     rgb(223, 215, 203) 15%
   );
 }
+/* app */
 .container {
   height: 85%;
   background-color: whitesmoke;
 }
 
-#user {
-  border: 1px solid black;
-}
-
 #friend-list {
-  max-height: 100px;
+  max-height: 500px;
+}
+/* seconda riga */
+.left-col {
+  height: 492px;
+}
+.main-app {
+  height: 492px;
+}
+.message-box {
+  height: 90%;
+  background-image: url(../img/mine.jpg);
+}
+.chat {
+  height: 10%;
+  background-color: whitesmoke;
+  justify-self: center;
 }
