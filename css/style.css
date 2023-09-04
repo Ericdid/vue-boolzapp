@@ -54,14 +54,44 @@ a {
   background-color: whitesmoke;
 }
 
-.message-box {
-  height: 90%;
-  background-image: url(../img/mine.jpg);
-}
 .chat {
   height: 10%;
   background-color: whitesmoke;
   justify-self: center;
+}
+
+/* chat */
+.message {
+  max-width: 60%;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid rgb(212, 212, 212);
+}
+
+.message-box {
+  max-height: 640px;
+  min-height: 640px;
+  background-image: url(../img/mine.jpg);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: auto;
+}
+.message-sent {
+  background-color: #c9fdc0;
+  align-self: flex-end;
+}
+.message-received {
+  background-color: white;
+  align-self: flex-start;
+}
+
+.chat-icon {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 
 /* Generals */
