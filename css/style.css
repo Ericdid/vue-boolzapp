@@ -19,8 +19,15 @@ a {
 }
 /* app */
 .container {
-  height: 80%;
+  height: 75%;
   background-color: whitesmoke;
+}
+/* prima riga */
+
+.friend-info {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
 }
 
 /* seconda riga */
@@ -56,9 +63,14 @@ a {
 .profile-img {
   width: 50px;
   border-radius: 50px;
+  margin-bottom: 15px;
+  margin-right: 5px;
 }
 .icon {
   color: rgb(167, 167, 167);
   margin: 0 5px;
   font-size: 20px;
+}
+.grey {
+  color: grey;
 }
