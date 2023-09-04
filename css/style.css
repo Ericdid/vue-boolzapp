@@ -22,24 +22,38 @@ a {
   height: 75%;
   background-color: whitesmoke;
 }
-/* prima riga */
 
+.main-app {
+  height: 100%;
+}
+.left-col {
+  height: 100%;
+}
+
+/* search */
+.search {
+  display: flex;
+  border: 1px solid grey;
+}
+
+.search-icon {
+  color: black;
+  width: 10%;
+}
+#search-bar {
+  width: 90%;
+  border: none;
+}
+/* fiend list */
 .friend-info {
   display: flex;
   flex-direction: column;
   justify-items: center;
 }
-
-/* seconda riga */
-.left-col {
-  height: 100%;
-}
 .f-list {
   background-color: whitesmoke;
 }
-.main-app {
-  height: 100%;
-}
+
 .message-box {
   height: 90%;
   background-image: url(../img/mine.jpg);
