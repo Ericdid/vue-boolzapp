@@ -60,10 +60,15 @@
         <div class="row main-app">
           <!-- prima colonna (info/lista amici) -->
           <div class="col-4 d-flex flex-column left-col p-0 border f-list">
-            <span class="info p-1 bg-info"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam, qui.</span
-            >
+            <div class="info p-1 bg-info d-flex align-items-center gx-2">
+              <span class="rounded-bg mx-2 justify-content-center d-flex">
+                <i class="fa-solid fa-bell-slash fa-xl align-self-center"></i>
+              </span>
+              <div class="info text">
+                <h5>Ricevi notifiche di nuovi messaggi</h5>
+                <a href="">Attiva notifiche desktop</a>
+              </div>
+            </div>
             <input type="text" id="search-bar" placeholder="filtra amici" />
             <div class="overflow-auto" id="friend-list">
               <div>friend 1</div>
