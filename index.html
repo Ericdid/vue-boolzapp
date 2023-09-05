@@ -29,7 +29,10 @@
   </head>
   <body>
     <!-- background app -->
-    <div class="wrapper d-flex justify-content-center align-items-center">
+    <div
+      class="wrapper d-flex justify-content-center align-items-center"
+      id="app"
+    >
       <!-- schermata iniziale -->
       <div class="container">
         <!-- prima riga (profilo utente----profilo amico selezionato) -->
@@ -82,59 +85,10 @@
               <input type="text" id="search-bar" placeholder="filtra amici" />
             </div>
             <div class="overflow-auto pt-3" id="friend-list">
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center" v-for="user in contacts">
                 <img src="./img/avatar_1.jpg" alt="" class="profile-img" />
                 <div class="friend-info">
                   <strong>Michele</strong>
-                  <p class="grey">ultimo accesso alle 12.20</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <img src="./img/avatar_2.jpg" alt="" class="profile-img" />
-                <div class="friend-info">
-                  <strong>Fabio</strong>
-                  <p class="grey">ultimo accesso alle 12.20</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <img src="./img/avatar_3.jpg" alt="" class="profile-img" />
-                <div class="friend-info">
-                  <strong>Samuele</strong>
-                  <p class="grey">ultimo accesso alle 12.20</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <img src="./img/avatar_4.jpg" alt="" class="profile-img" />
-                <div class="friend-info">
-                  <strong>Alessandro B.</strong>
-                  <p class="grey">ultimo accesso alle 12.20</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <img src="./img/avatar_5.jpg" alt="" class="profile-img" />
-                <div class="friend-info">
-                  <strong>Alessandro L.</strong>
-                  <p class="grey">ultimo accesso alle 12.20</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <img src="./img/avatar_6.jpg" alt="" class="profile-img" />
-                <div class="friend-info">
-                  <strong>Claudia</strong>
-                  <p class="grey">ultimo accesso alle 12.20</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <img src="./img/avatar_7.jpg" alt="" class="profile-img" />
-                <div class="friend-info">
-                  <strong>Federico</strong>
-                  <p class="grey">ultimo accesso alle 12.20</p>
-                </div>
-              </div>
-              <div class="d-flex align-items-center">
-                <img src="./img/avatar_8.jpg" alt="" class="profile-img" />
-                <div class="friend-info">
-                  <strong>Federico</strong>
                   <p class="grey">ultimo accesso alle 12.20</p>
                 </div>
               </div>
