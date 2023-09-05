@@ -77,11 +77,11 @@ a {
   gap: 10px;
   overflow: auto;
 }
-.message-sent {
+.sent {
   background-color: #c9fdc0;
   align-self: flex-end;
 }
-.message-received {
+.received {
   background-color: white;
   align-self: flex-start;
 }

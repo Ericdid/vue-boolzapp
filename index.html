@@ -97,21 +97,12 @@
           <!-- seconda colonna (box di testo/chat) -->
           <div class="col-8 d-flex flex-column p-0">
             <div class="message-box">
-              <div class="message-sent message">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae, officiis?
-              </div>
-              <div class="message-received message">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae,
-              </div>
-              <div class="message-received message">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae,
-              </div>
-              <div class="message-sent message">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestiae, officiis?
+              <div
+                class="message"
+                v-for="chat in contacts[0].messages"
+                :class="chat.status"
+              >
+                {{chat.message}}
               </div>
             </div>
             <div class="chat d-flex border">
