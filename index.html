@@ -86,9 +86,9 @@
             </div>
             <div class="overflow-auto pt-3" id="friend-list">
               <div class="d-flex align-items-center" v-for="user in contacts">
-                <img src="./img/avatar_1.jpg" alt="" class="profile-img" />
+                <img :src="user.avatar" alt="" class="profile-img" />
                 <div class="friend-info">
-                  <strong>Michele</strong>
+                  <strong>{{user.name}}</strong>
                   <p class="grey">ultimo accesso alle 12.20</p>
                 </div>
               </div>
