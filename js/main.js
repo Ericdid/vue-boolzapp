@@ -4,7 +4,13 @@ createApp({
   data() {
     return {
       contacts,
-      selectedUser: 7,
+      selectedUser: 0,
     };
+  },
+
+  methods: {
+    newSelectedUser(index) {
+      this.selectedUser = index;
+    },
   },
 }).mount("#app");

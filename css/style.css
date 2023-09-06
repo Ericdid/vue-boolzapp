@@ -45,6 +45,9 @@ a {
   border: none;
 }
 /* fiend list */
+#friend-box {
+  cursor: pointer;
+}
 .friend-info {
   display: flex;
   flex-direction: column;

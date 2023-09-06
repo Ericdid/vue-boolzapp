@@ -89,7 +89,12 @@
               <input type="text" id="search-bar" placeholder="filtra amici" />
             </div>
             <div class="overflow-auto pt-3" id="friend-list">
-              <div class="d-flex align-items-center" v-for="user in contacts">
+              <div
+                class="d-flex align-items-center"
+                id="friend-box"
+                v-for="(user,index) in contacts"
+                @click="newSelectedUser(index)"
+              >
                 <img :src="user.avatar" alt="" class="profile-img" />
                 <div class="friend-info">
                   <strong>{{user.name}}</strong>
