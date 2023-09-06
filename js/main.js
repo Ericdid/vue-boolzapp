@@ -4,6 +4,7 @@ createApp({
   data() {
     return {
       contacts,
+      selectedUser: 7,
     };
   },
 }).mount("#app");
