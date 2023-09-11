@@ -33,10 +33,17 @@ createApp({
         this.contacts[this.selectedUser].messages.push(answer);
       }, 1000);
     },
-    // filtro ricerca contatti <-----da completare
 
+    // filtro ricerca contatti
     filter() {
-      if (searchUser.includes());
+      this.contacts.forEach((user) => {
+        let lowerCaseUser = user.name.toLowerCase();
+        if (lowerCaseUser.includes(this.searchUser.toLowerCase())) {
+          user.visible = true;
+        } else {
+          user.visible = false;
+        }
+      });
     },
   },
 }).mount("#app");
