@@ -48,6 +48,9 @@ a {
 #friend-box {
   cursor: pointer;
 }
+.ms-friend {
+  display: flex;
+}
 .friend-info {
   display: flex;
   flex-direction: column;

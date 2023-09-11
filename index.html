@@ -82,7 +82,7 @@
                 <a href="">Attiva notifiche desktop</a>
               </div>
             </div>
-            <!-- barra di ricerca -->
+            <!-- Filtro amici -->
             <div class="search mt-2">
               <div class="search-icon">
                 <i class="fa-solid fa-magnifying-glass search-icon mx-2"></i>
@@ -97,10 +97,12 @@
                 v-for="(user,index) in contacts"
                 @click="newSelectedUser(index)"
               >
-                <img :src="user.avatar" alt="" class="profile-img" />
-                <div class="friend-info">
-                  <strong>{{user.name}}</strong>
-                  <p class="grey">ultimo accesso alle 12.20</p>
+                <div v-show="user.visible" class="ms-friend">
+                  <img :src="user.avatar" alt="" class="profile-img" />
+                  <div class="friend-info">
+                    <strong>{{user.name}}</strong>
+                    <p class="grey">ultimo accesso alle 12.20</p>
+                  </div>
                 </div>
               </div>
             </div>
