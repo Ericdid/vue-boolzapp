@@ -82,12 +82,14 @@
                 <a href="">Attiva notifiche desktop</a>
               </div>
             </div>
+            <!-- barra di ricerca -->
             <div class="search mt-2">
               <div class="search-icon">
                 <i class="fa-solid fa-magnifying-glass search-icon mx-2"></i>
               </div>
               <input type="text" id="search-bar" placeholder="filtra amici" />
             </div>
+            <!-- lista amici -->
             <div class="overflow-auto pt-3" id="friend-list">
               <div
                 class="d-flex align-items-center"
@@ -118,8 +120,14 @@
               <div class="chat-icon">
                 <i class="fa-regular fa-face-smile grey"></i>
               </div>
+              <!-- nuovo messaggio -->
               <div class="chat-text"></div>
-              <input type="text" class="w-75" placeholder="testo messaggio" />
+              <input
+                type="text"
+                class="w-75"
+                v-model="newMessage.message"
+                @keypress.enter="sendMessage()"
+              />
               <div class="chat-icon">
                 <i class="fa-solid fa-microphone grey"></i>
               </div>
