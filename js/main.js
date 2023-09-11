@@ -23,6 +23,14 @@ createApp({
       staticMessage = { ...this.newMessage };
       this.contacts[this.selectedUser].messages.push(staticMessage);
       this.newMessage = "";
+      setTimeout(() => {
+        let answer = {
+          date: "empty",
+          message: "ok",
+          status: "received",
+        };
+        this.contacts[this.selectedUser].messages.push(answer);
+      }, 1000);
     },
   },
 }).mount("#app");
