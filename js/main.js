@@ -22,7 +22,7 @@ createApp({
     sendMessage() {
       staticMessage = { ...this.newMessage };
       this.contacts[this.selectedUser].messages.push(staticMessage);
-      this.newMessage = "";
+      this.newMessage.message = "";
       setTimeout(() => {
         let answer = {
           date: "empty",
