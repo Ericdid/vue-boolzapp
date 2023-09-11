@@ -5,6 +5,7 @@ createApp({
     return {
       contacts,
       selectedUser: 0,
+      searchUser: "",
 
       newMessage: {
         date: "empty",
@@ -31,6 +32,11 @@ createApp({
         };
         this.contacts[this.selectedUser].messages.push(answer);
       }, 1000);
+    },
+    // filtro ricerca contatti <-----da completare
+
+    filter() {
+      if (searchUser.includes());
     },
   },
 }).mount("#app");

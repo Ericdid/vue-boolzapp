@@ -87,7 +87,13 @@
               <div class="search-icon">
                 <i class="fa-solid fa-magnifying-glass search-icon mx-2"></i>
               </div>
-              <input type="text" id="search-bar" placeholder="filtra amici" />
+              <input
+                type="text"
+                id="search-bar"
+                placeholder="filtra amici"
+                @keyup.enter="filter()"
+                v-model="searchUser"
+              />
             </div>
             <!-- lista amici -->
             <div class="overflow-auto pt-3" id="friend-list">
